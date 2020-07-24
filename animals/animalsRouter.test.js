@@ -125,7 +125,7 @@ describe('DELETE /animals/:id', () => {
         return supertest(server)
           .get('/api/animals')
           .then((res) => {
-            expect(res.body).toHaveLength(10);
+            expect(res.body).toHaveLength(1);
           });
       });
   });
